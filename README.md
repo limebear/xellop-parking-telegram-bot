@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="rammus.png">
-</p>
-
-# Rammus-bot
+# xellop-parking-telegram-bot
 
 Telegram bot that helps with automatic parking payment processing for Xellop Parking System
 
@@ -35,7 +31,7 @@ AUTHORIZED_USER_IDS="123456789,987654321"
 ## Usage
 
 ```
-python rammus.py
+python parking-bot.py
 ```
 
 ## Commands

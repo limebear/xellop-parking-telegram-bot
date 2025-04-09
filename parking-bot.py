@@ -103,7 +103,7 @@ class AsyncCarParkingManager:
             response = self.session.get(url)
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # 할인 내역 테이블의 tbody를 찾습니다
+            # find discount table tbody
             discount_table = soup.find('table', {'class': 'table'})
             if not discount_table:
                 return False
@@ -112,7 +112,7 @@ class AsyncCarParkingManager:
             if not tbody:
                 return False
                 
-            # tbody 내에 tr이 있다면 할인이 적용된 상태입니다
+            # if tbody has tr, then discount is already applied
             discount_rows = tbody.find_all('tr')
             return len(discount_rows) > 0
             
