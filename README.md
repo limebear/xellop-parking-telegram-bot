@@ -46,5 +46,3 @@ python parking-bot.py
 - Environment variables for sensitive credentials
 - User authorization based on Telegram user IDs
 - Only authorized users can use bot commands
-# xellop-parking-telegram-bot
-# xellop-parking-telegram-bot
